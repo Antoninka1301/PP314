@@ -1,0 +1,105 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:width="http://www.w3.org/1999/xhtml"-->
+<!--      xmlns:text-align="http://www.w3.org/1999/xhtml">-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>-->
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"-->
+<!--          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">-->
+<!--    <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous"/>-->
+<!--    <title>FirstView</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<nav class="navbar navbar-dark bg-dark">-->
+<!--    <div class="container-fluid">-->
+<!--        <div>-->
+<!--            <div>-->
+<!--                <span class="navbar-text text-white font-weight-bold" th:text="${user.getEmail()}"></span>-->
+<!--                <span class="navbar-text text-white">with roles</span>-->
+<!--                <span class="navbar-text text-white" th:each="role : ${user.getRoles()}"-->
+<!--                      th:text="${role.getName()}">   </span>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <form th:action="@{/logout}" method="post">-->
+<!--            <button type="submit" class="btn btn-dark">Logout</button>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--</nav>-->
+<!--<div class="container-fluid bg-light">-->
+<!--    <div class="row">-->
+
+
+<!--        &lt;!&ndash; Левый блок &ndash;&gt;-->
+<!--        <div class="col-2 p-0 gy-3 bg-white min-vh-100">-->
+<!--            <div class="d-flex align-items-start">-->
+<!--                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">-->
+<!--                    <a class="nav-link" th:href="@{/user}">User</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+<!--        &lt;!&ndash; Правый блок &ndash;&gt;-->
+<!--        <div class="col-10 bg-light">-->
+<!--            <h1>User information-page</h1>-->
+<!--            <div class="tab-content" id="nav-tabContent">-->
+<!--                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">-->
+<!--                    <h5>About user</h5>-->
+<!--                    <table class="table table-striped border" id="users_table">-->
+<!--                        <thead>-->
+<!--                        <tr>-->
+<!--                            <th scope="col">ID</th>-->
+<!--                            <th scope="col">Username</th>-->
+<!--                            <th scope="col">Name</th>-->
+<!--                            <th scope="col">Email</th>-->
+<!--                            <th scope="col">Role</th>-->
+
+<!--                        </tr>-->
+<!--                        </thead>-->
+
+
+<!--                        <div>-->
+<!--                            <td th:text="${user.id}">данные</td>-->
+<!--                            <td th:text="${user.username}">данные</td>-->
+<!--                            <td th:text="${user.name}">данные</td>-->
+<!--                            <td th:text="${user.email}">данные</td>-->
+<!--                            <td th:each="role : ${user.getRoles()}" th:text="${role.getName()}">данные</td>-->
+
+
+<!--                        </div>-->
+
+
+<!--                    </table>-->
+
+
+<!--                </div>-->
+
+
+<!--            </div>-->
+
+
+<!--        </div>-->
+
+
+<!--    </div>-->
+
+
+<!--</div>-->
+
+
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"-->
+<!--        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"-->
+<!--        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"-->
+<!--        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"-->
+<!--        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--</body>-->
+<!--</html>-->
